@@ -151,12 +151,21 @@ main{
     color: #757575;
 }
 
+.main-tables-container{
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain ;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table, .main-comision-table{
     width: 70%;
+    scroll-snap-align: center;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 55px;
     font-family: "Inter", sans-serif;
 }
 
@@ -392,7 +401,7 @@ main{
 }
 
 .bitcoin-img-container{
-    width: 100px;
+    width: 100%;
     min-width: 320px;
     height: 50vh;
     background-image: url('../assets/img/bitcoinbaby2x.jpg');
